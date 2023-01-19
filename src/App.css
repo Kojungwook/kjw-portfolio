@@ -126,7 +126,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../public/images/home-bg.png");
+  background-image: url("../public/images/home-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
@@ -143,8 +143,6 @@ section {
   font-weight: 600;
   color: var(--primaryColor);
 }
-
-/*---------hero-------------*/
 .heading {
   font-size: 30px;
   color: var(--primaryColor);
@@ -159,28 +157,24 @@ section {
   margin-left: 200px;
 }
 .right p {
-  margin-left: 50px;
+  margin-left: 150px;
+  font-size: 30px;
+  margin-bottom: 45px;
 }
-
-/*---------about-------------*/
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
-/*---------services-------------*/
-.services .box {
+/*---------skills-------------*/
+.skills .box {
   background-color: var(--primaryBackground);
   padding: 35px;
 }
-.services i {
-  color: var(--primaryColor);
-}
-.services h3 {
+.skills h3 {
   margin-top: 20px;
 }
-/*---------services-------------*/
 .grid4 {
   grid-template-columns: repeat(4, 1fr);
   height: 50vh;

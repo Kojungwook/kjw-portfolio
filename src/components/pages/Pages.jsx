@@ -4,7 +4,7 @@ import { Header } from "../common/Header"
 import { Home } from "../home/Home"
 import { About } from "./About"
 import { Portfolio } from "./Portfolio"
-import { Services } from "./Services"
+import { Skills } from "./Skills"
 export const Pages = () => {
   return (
     <BrowserRouter>
@@ -12,14 +12,14 @@ export const Pages = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
+        <Route path='/skills' element={<Skills />} />
         <Route path='/portfolio' element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
     // <>
     // <Hero />
     // <About />
-    // <Services />
+    // <Skills />
     // <Portfolio />
     // </>
   )

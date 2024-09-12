@@ -61,7 +61,6 @@ button {
 .fontSize {
   font-size: 20px;
 }
-
 /*---------header-------------*/
 header {
   background-color: var(--headingColor);

@@ -10,7 +10,7 @@ export const Pages = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/kjw-portfolio' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/skills' element={<Skills />} />
         <Route path='/portfolio' element={<Portfolio />} />

@@ -8,7 +8,7 @@ export const About = () => {
         <div className='container flex'>
           <>
             <div className='left' data-aos='fade-down-right'>
-              <img src="./images/me.jpg" alt='' />
+              <img src={`${process.env.PUBLIC_URL}/images/me.jpg`} alt='' />
             </div>
             <div className='right' data-aos='fade-down-left'>
               <Heading title='About Me' />

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kjw-portfolio/static/css/main.6631d484.css",
-    "main.js": "/kjw-portfolio/static/js/main.84522082.js",
+    "main.js": "/kjw-portfolio/static/js/main.a338eab4.js",
     "static/media/home-bg.jpg": "/kjw-portfolio/static/media/home-bg.aa57a7e2140b94062779.jpg",
     "index.html": "/kjw-portfolio/index.html",
     "main.6631d484.css.map": "/kjw-portfolio/static/css/main.6631d484.css.map",
-    "main.84522082.js.map": "/kjw-portfolio/static/js/main.84522082.js.map"
+    "main.a338eab4.js.map": "/kjw-portfolio/static/js/main.a338eab4.js.map"
   },
   "entrypoints": [
     "static/css/main.6631d484.css",
-    "static/js/main.84522082.js"
+    "static/js/main.a338eab4.js"
   ]
 }

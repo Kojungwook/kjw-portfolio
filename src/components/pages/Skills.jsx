@@ -10,9 +10,8 @@ export const Skills = () => {
           <Heading title="skills" />
           <div className="content grid3">
             {skills.map((item) => (
-              <div className="box" data-aos="flip-left">
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+              <div className="box" key={item.id} data-aos="flip-left">
+                <img src={item.cover} alt={item.title} />
               </div>
             ))}
           </div>

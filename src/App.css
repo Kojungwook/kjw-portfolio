@@ -27,12 +27,6 @@ a {
 a:hover {
   color: var(--primaryColor);
 }
-p {
-  color: var(--sliver);
-  font-size: 15px;
-  line-height: 30px;
-  margin: 20px 0;
-}
 h1,
 h2,
 h3,
@@ -44,6 +38,9 @@ h6 {
 .container {
   max-width: 80%;
   margin: auto;
+}
+.container h2 {
+  font-size: 45px;
 }
 .flexsb {
   display: flex;
@@ -78,6 +75,9 @@ header {
 }
 header a {
   margin-left: 40px;
+}
+header .logo {
+  margin-top: 20px;
 }
 .toggle {
   cursor: pointer;
@@ -150,38 +150,138 @@ section {
   text-align: center;
   margin-bottom: 60px;
 }
-
+@media (max-width: 1024px) {
+  .Typewriter span {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .Typewriter span {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .Typewriter span {
+    font-size: 30px;
+  }
+}
 /*---------about-------------*/
+.about .container {
+  display: flex;
+  align-items: center;
+}
 .about .heading {
   text-align: center;
-  margin-left: 200px;
+}
+.left img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.left,
+.right {
+  flex: 1 1 50%;
+  padding: 20px;
 }
 .right p {
-  margin-left: 150px;
+  padding: 5px 8px;
   font-size: 30px;
-  margin-bottom: 45px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
+@media (max-width: 1024px) {
+  .right h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .right p {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .right h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .right p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .right h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .right p {
+    margin-bottom: 4px;
+    font-size: 8px;
+  }
+}
 
 /*---------skills-------------*/
 .skills .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primaryBackground);
   padding: 35px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.skills .box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .skills h3 {
   margin-top: 20px;
 }
-.grid4 {
-  grid-template-columns: repeat(4, 1fr);
+.content .grid3 {
+  grid-template-columns: repeat(3, 1fr);
   height: 50vh;
   place-items: center;
   text-align: center;
 }
-
+@media (max-width: 1024px) {
+  .container h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .right p {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .right p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .right p {
+    margin-bottom: 4px;
+    font-size: 8px;
+  }
+}
 /*---------counter-------------*/
 .counter {
   margin-top: 80px;
@@ -196,7 +296,6 @@ section {
 }
 /*---------counter-------------*/
 /*---------portfolio-------------*/
-
 article {
   margin-top: 50px;
   margin-bottom: 80px;
@@ -213,14 +312,9 @@ article .box {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   opacity: 0;
-  cursor: pointer;
   transition: 0.5s;
   z-index: 2;
 }
@@ -249,6 +343,112 @@ article .box:hover .overlay {
 .catButton button {
   text-transform: capitalize;
   margin-right: 20px;
+  font-size: 20px;
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+.overlay-content .title {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.overlay-content .contributors,
+.overlay-content .techStack {
+  color: var(--black);
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.overlay-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+.overlay-content .buttons a {
+  color: var(--black);
+  text-align: center;
+}
+.overlay-content .buttons a svg {
+  width: 32px;
+  height: 32px;
+}
+/* 반응형 버튼 크기 */
+@media (max-width: 1024px) {
+  .catButton button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .overlay-content .title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .overlay-content .contributors {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .overlay-content .techStack {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .overlay-content .buttons a svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .catButton button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .overlay-content .title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .overlay-content .contributors {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .overlay-content .techStack {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .overlay-content .buttons a svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .catButton button {
+    padding: 4px 9px;
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+  .overlay-content .title {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+  .overlay-content .contributors {
+    font-size: 5px;
+    margin-bottom: 2px;
+  }
+  .overlay-content .techStack {
+    font-size: 5px;
+    margin-bottom: 2px;
+  }
+  .overlay-content .buttons a svg {
+    width: 10px;
+    height: 10px;
+  }
 }
 /*---------portfolio-------------*/
 /*---------testimonials-------------*/

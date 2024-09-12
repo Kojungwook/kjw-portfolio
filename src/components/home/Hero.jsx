@@ -9,9 +9,10 @@ export const Hero = () => {
           <h1>
             <Typewriter
               options={{
-                strings: ["안녕하세요", "프론트엔드 개발자 고정욱입니다"],
+                strings: ["안녕하세요", "웹개발자 고정욱입니다"],
                 autoStart: true,
                 loop: true,
+                delay: 100
               }}
             />
           </h1>
